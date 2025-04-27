@@ -1,0 +1,199 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f5f7;
+  color: #333;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 20px;
+  /* padding: 30px; */
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.left-column {
+  background-color: #404040;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 0 0 0 0;
+}
+.personal-info {
+  width: 105%;
+  background-color: #1a73e8;
+  padding: 20px 10px 120px 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.left-column img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.left-column h1 {
+  font-size: 1.8em;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+.left-column p {
+  font-size: 0.95em;
+  margin: 2px 0;
+  text-align: center;
+}
+.section-title {
+  font-size: 1.2em;
+  color: #1a73e8;
+  font-weight: bold;
+  border-bottom: 2px solid #1a73e8;
+  margin: 20px 0 10px;
+  width: 100%;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+  font-size: 0.95em;
+}
+.contact-info i {
+  font-size: 1.2em;
+  color: #1a73e8;
+}
+.contact-info a,
+.references-list a {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #e0e0e0;
+  letter-spacing: 0.3px;
+  font-size: 0.95em;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover,
+.references-list a:hover {
+  color: #1a73e8;
+}
+
+.skills-list,
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+.skills-list span,
+.hobbies-list span {
+  background-color: #e3f2fd;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  color: #1a73e8;
+}
+.right-column {
+  padding: 20px 20px 10px 10px;
+}
+
+.divider {
+  height: 2px;
+  background-color: #1a73e8;
+  margin: 10px 0 20px;
+  border-radius: 2px;
+}
+.experience-item h3 {
+  margin: 5px 0;
+  font-size: 1.05em;
+  color: #333;
+}
+.experience-item p {
+  margin: 5px 0 10px;
+  font-size: 0.95em;
+  color: #555;
+}
+.footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #777;
+  margin-top: 30px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+
+#courses ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3px;
+  padding: 0;
+  list-style: none;
+}
+
+#courses li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.95em;
+}
+
+#courses li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1a73e8;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.reference-item p {
+  margin: 2px 0;
+  font-size: 0.95em;
+  text-align: left;
+}
+
+.reference-item i {
+  color: #1a73e8;
+  margin-right: 5px;
+}
+
+.download-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  text-decoration: none;
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+  background-color: #155ab6;
+  transform: scale(1.1);
+}
